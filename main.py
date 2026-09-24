@@ -28,7 +28,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(mensagem):
-    if mensagem.author == bot.user:  # evita o bot responder a si mesmo
+    if mensagem.author == bot.user:  
         return
 
     if mensagem.content.startswith("sh! "):
