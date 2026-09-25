@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 senha = os.getenv("senha")
 
+print("Token recebido:", repr(os.getenv("senha")))
+
 intents = discord.Intents.default()
 intents.message_content = True  
 
