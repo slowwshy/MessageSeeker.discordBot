@@ -53,6 +53,7 @@ async def on_message(mensagem):
 
         for bloco in dividir_em_blocos(texto_completo):
            await mensagem.channel.send(bloco)
-        
+
+print("Variáveis com 'senha' no nome:", [k for k in os.environ if "senha" in k.lower()])        
 
 bot.run(senha)
